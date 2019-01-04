@@ -20,15 +20,15 @@ from email.mime.text import MIMEText
 
 
 # 定义发件人和收件人
-mail_from = "zhongrx@yunovo.cn"
-mail_password = "Zhongrx2017"
-mail_to = ["984701108@qq.com"]
+mail_from = "xxxx@yunovo.cn"
+mail_password = "xxxxx"
+mail_to = ["3227456102@qq.com"]
 
 
 def email_content():
     # 邮件主题
     message = MIMEMultipart()
-    message['From'] = Header(u"钟壬先" + "<" + mail_from + ">", 'utf-8')
+    message['From'] = Header(u"xxxx" + "<" + mail_from + ">", 'utf-8')
     message['To'] = ";".join(mail_to)
     message['Subject'] = Header(u"Python接口自动化测试报告", 'utf-8')
 
